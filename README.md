@@ -36,7 +36,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [FrontEnd Mentor: My solution]()
+- Solution URL: [FrontEnd Mentor: My solution](https://www.frontendmentor.io/solutions/four-card-solution--6El3CBx3N)
 - Live Site URL: [GitHub Page: My solution](https://andresssg.github.io/Four-Card/)
 
 
