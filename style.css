@@ -68,28 +68,28 @@ header {
     overflow: hidden;
 }
 
-.card__title{
+.card__title {
     margin-bottom: 10px;
     color: var(--primary-text-color);
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
 
-.card__text{
+.card__text {
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: var(--secondary-text-color);
 }
 
-.card__img{
+.card__img {
     position: absolute;
     bottom: 0;
     right: 0;
     margin: 30px;
 }
 
-.card::after{
+.card::after {
     content: "";
     position: absolute;
     top: 0;
@@ -97,15 +97,19 @@ header {
     width: 100%;
     height: 5px;
 }
-.card--green.card::after{
+
+.card--green.card::after {
     background-color: var(--cyan-card-color);
 }
-.card--red.card::after{
+
+.card--red.card::after {
     background-color: var(--red-card-color);
 }
-.card--orange.card::after{
+
+.card--orange.card::after {
     background-color: var(--orange-card-color);
 }
-.card--blue.card::after{
+
+.card--blue.card::after {
     background-color: var(--blue-card-color);
 }
