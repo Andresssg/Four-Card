@@ -1,0 +1,111 @@
+:root {
+    --red-card-color: hsl(0, 78%, 62%);
+    --cyan-card-color: hsl(180, 62%, 55%);
+    --orange-card-color: hsl(34, 97%, 64%);
+    --blue-card-color: hsl(212, 86%, 64%);
+
+    --primary-text-color: hsl(234, 12%, 34%);
+    --secondary-text-color: hsl(229, 6%, 66%);
+    --background-color: hsl(0, 0%, 98%);
+}
+
+/* font-family: 'Poppins', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--background-color);
+}
+
+header {
+    width: 400px;
+    margin: 30px 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__title {
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 1.7em;
+    color: var(--primary-text-color);
+    /* color: var(--secondary-text-color); */
+}
+
+.header__title span {
+    font-weight: 600;
+}
+
+.header__text {
+    font-family: 'Poppins', sans-serif;
+    padding: 0 10px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+
+.card {
+    position: relative;
+    margin: 15px 0;
+    padding: 30px;
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px #95959585;
+    overflow: hidden;
+}
+
+.card__title{
+    margin-bottom: 10px;
+    color: var(--primary-text-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.card__text{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: var(--secondary-text-color);
+}
+
+.card__img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 30px;
+}
+
+.card::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+}
+.card--green.card::after{
+    background-color: var(--cyan-card-color);
+}
+.card--red.card::after{
+    background-color: var(--red-card-color);
+}
+.card--orange.card::after{
+    background-color: var(--orange-card-color);
+}
+.card--blue.card::after{
+    background-color: var(--blue-card-color);
+}
